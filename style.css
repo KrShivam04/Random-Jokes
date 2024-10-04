@@ -15,7 +15,7 @@ body {
         align-items: center;
 }
 .container {
-        height: 60vh;
+        min-height: 60vh;
         width: 50vw;
         padding-left: 4rem;
         padding-right: 4rem;
