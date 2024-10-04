@@ -1,0 +1,108 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(237, 15, 104);
+}
+.mainContainer {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+}
+.container {
+        height: 60vh;
+        width: 50vw;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border: 1px solid rgb(74, 73, 73);
+        background-color: rgb(109, 99, 99);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.3s ease-in-out;
+}
+.contentClass p {
+        font-size: 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        max-width: 70%;
+        margin: auto;
+        font-weight: 700;
+        color: white;
+}
+#btn {
+        padding: 0.8rem;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        border:none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+#btn:hover {
+        background-color: rgb(50, 50, 50);
+}
+#emojiContent img {
+        height: 2.5rem;
+        width: 2.5rem;
+}
+.emojiContent {
+        display: none;
+}
+
+@media (max-width: 1200px) {
+        .container {
+                width: 60vw;
+                height: 60vh;
+                padding-left: 3rem;
+                padding-right: 3rem;
+        }
+        .contentClass p {
+                font-size: 1.3rem;
+        }
+}
+
+@media (max-width: 768px) {
+        .container {
+                width: 80vw;
+                height: 70vh;
+                padding-left: 2rem;
+                padding-right: 2rem;
+        }
+        .contentClass p {
+                font-size: 1.2rem;
+        }
+        #btn {
+                padding: 0.6rem;
+        }
+        #emojiContent img {
+                height: 2rem;
+                width: 2rem;
+        }
+}
+
+@media (max-width: 480px) {
+        .container {
+                width: 90vw;
+                height: 60vh;
+                padding-left: 1rem;
+                padding-right: 1rem;
+        }
+        .contentClass p {
+                font-size: 1rem;
+        }
+        #btn {
+                padding: 0.5rem;
+        }
+        #emojiContent img {
+                height: 1.5rem;
+                width: 1.5rem;
+        }
+}
